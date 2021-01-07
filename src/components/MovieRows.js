@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from '../axios';
+import './MovieRow.css';
 
 const base_url = 'https://image.tmdb.org/t/p/original/';
 
