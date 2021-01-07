@@ -8,6 +8,7 @@ function App() {
       <MovieRows
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
+        isLargeRow
       />
       <MovieRows title="Trending Now" fetchUrl={requests.fetchTrending} />
       <MovieRows title="Top Rated" fetchUrl={requests.fetchToRated} />
