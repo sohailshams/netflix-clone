@@ -17,7 +17,20 @@ function Banner() {
     fetchData();
   }, []);
 
-  return <header></header>;
+  return (
+    <header
+      className="banner"
+      style={{
+        backgroundSize: 'cover',
+        backgroundImage: `url(https://image.tmdb.org/t/p/original/${movie.backdrop_path})`,
+        backgroundPosition: 'center center',
+      }}
+    >
+      <div className="banner-content">
+        <h1>{movie?.name || movie?.title || movie?.original_name}</h1>
+      </div>
+    </header>
+  );
 }
 
 export default Banner;
