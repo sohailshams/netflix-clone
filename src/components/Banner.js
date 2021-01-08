@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from '../axios';
+import requests from '../requests';
 
-function banner() {
-  return <div></div>;
+function Banner() {
+  const [movie, setMovie] = useState({});
+
+  return <header></header>;
 }
 
-export default banner;
+export default Banner;
